@@ -21,10 +21,7 @@ class DepthCalculator {
       countDepth.push(this.calculateDepth(item));
     });
 
-    return Math.max(0, ...countDepth) + 1;
-    // return Array.isArray(arr) ?
-    // 1 + Math.max(0, ...arr.map(item => this.calculateDepth(item))) :
-    // 0;
+    return (Math.max(0, ...countDepth) + 1);
   }
 }
 
